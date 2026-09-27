@@ -1,0 +1,1921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spice Haven | Artisanal Spice & Contemporary Gastronomy</title>
+  <meta name="description" content="Spice Haven is an award-winning dark cinematic fine dining restaurant. Experience woodfired hearth cuisine, rare spices, and cellar pairings curated by Master Chef Julian Vance." />
+  <meta name="keywords" content="fine dining, luxury restaurant, Michelin guide, woodfired steak, wagyu, sommelier wine cellar, private dining, San Francisco gastronomy" />
+  <link rel="canonical" href="https://spicehaven-dining.com/" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- OpenGraph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Spice Haven | Fine Dining Gastronomy" />
+  <meta property="og:description" content="An exquisite symphony of fire, spice, and soul. Reserve your private dining experience." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:url" content="https://spicehaven-dining.com/" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Spice Haven | Fine Dining Gastronomy" />
+  <meta name="twitter:description" content="An exquisite symphony of fire, spice, and soul. Reserve your private dining experience." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80" />
+
+  <!-- Schema.org Structured Data (Restaurant) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Spice Haven",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://spicehaven-dining.com/",
+    "telephone": "+1-555-382-7423",
+    "priceRange": "₹₹₹₹",
+    "servesCuisine": "Fine Dining, Contemporary Gastronomy, Woodfired Hearth",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "482 Royal Sovereign Avenue, Suite 10",
+      "addressLocality": "San Francisco",
+      "addressRegion": "CA",
+      "postalCode": "94107",
+      "addressCountry": "US"
+    }
+  }
+  </script>
+
+  <!-- Google Fonts: Luxury Serif & Modern Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/design-system.css?v=2.7" />
+  <link rel="stylesheet" href="css/main.css?v=2.7" />
+  <link rel="stylesheet" href="css/components.css?v=2.7" />
+  <link rel="stylesheet" href="css/sections.css?v=2.7" />
+  <link rel="stylesheet" href="css/animations.css?v=2.7" />
+</head>
+<body>
+
+  <!-- =========================================================================
+       CINEMATIC RED VELVET RESTAURANT ENTRANCE
+       ========================================================================= -->
+  <div id="curtainEntrance" aria-hidden="false">
+    <!-- Top Valance Pelmet -->
+    <div class="curtain-pelmet"></div>
+
+    <!-- Left Velvet Drapery Panel -->
+    <div class="curtain-panel curtain-left" id="curtainLeft"></div>
+
+    <!-- Right Velvet Drapery Panel -->
+    <div class="curtain-panel curtain-right" id="curtainRight"></div>
+
+    <!-- Center Theatrical Emblem & Entrance Card -->
+    <div class="curtain-content" id="curtainContent">
+      <div class="curtain-brand-crest">S</div>
+      <div class="curtain-brand-title brand-name-insert">Spice Haven</div>
+      <div class="curtain-brand-tagline">Artisanal Spice & Contemporary Gastronomy</div>
+      
+      <button type="button" class="curtain-enter-btn gold-shimmer" id="curtainEnterBtn" aria-label="Enter Spice Haven Restaurant">
+        <span>Enter Restaurant</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+
+      <div class="curtain-skip-note">
+        Click to unveil the culinary sanctuary • Or wait for entry
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       SITE HEADER & NAVIGATION
+       ========================================================================= -->
+  <header class="site-header" id="mainHeader">
+    <div class="container header-inner">
+      <a href="#" class="brand-logo" id="brandLogoLink">
+        <div class="brand-crest">S</div>
+        <div class="brand-text">
+          <span class="brand-title brand-name-insert">Spice Haven</span>
+          <span class="brand-sub">Fine Dining</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#story" class="nav-link">Our Story</a></li>
+          <li><a href="#menu" class="nav-link">The Menu</a></li>
+          <li><a href="#experiences" class="nav-link">Dining Rooms</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#testimonials" class="nav-link">Critiques</a></li>
+          <li><a href="#location" class="nav-link">Location & Hours</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Cart Trigger Button -->
+        <button class="cart-trigger-btn" id="cartTriggerBtn" aria-label="Open your culinary order" aria-expanded="false" aria-controls="cartDrawer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-counter-badge" id="cartBadge">0</span>
+        </button>
+
+        <!-- Customer Account / Profile Trigger Button -->
+        <button class="btn btn-outline-gold btn-sm" id="headerAccountBtn" onclick="ProfileModule.open()" title="Customer Profile & Order History" style="padding: 6px 12px; font-size: 0.8rem; display: inline-flex; align-items: center; gap: 6px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          <span>Account</span>
+        </button>
+
+        <!-- Track Status Modal Trigger Button -->
+        <button class="btn btn-outline-gold btn-sm" id="headerTrackBtn" onclick="StatusTrackerModule.open()" title="Track Your Table Reservation or Order" style="padding: 6px 12px; font-size: 0.8rem;">
+          Track Status
+        </button>
+
+        <!-- Reserve Table Modal Trigger Button -->
+        <button class="btn btn-primary-gold btn-sm trigger-reservation-modal" id="headerReserveBtn">
+          Reserve a Table
+        </button>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileNavDrawer">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Off-Canvas Navigation Drawer & Backdrop Overlay -->
+  <div class="cart-overlay" id="mobileNavOverlay"></div>
+  <div class="cart-drawer" id="mobileNavDrawer" style="max-width: 320px; z-index: 350;">
+    <div class="cart-drawer-header">
+      <div class="brand-text">
+        <span class="brand-title brand-name-insert">Spice Haven</span>
+        <span class="brand-sub">Navigation</span>
+      </div>
+      <button class="cart-close-btn" id="mobileNavClose" aria-label="Close menu">&times;</button>
+    </div>
+    <div style="padding: 32px 24px; display: flex; flex-direction: column; gap: 20px;">
+      <a href="#story" class="nav-link" style="font-size: 1.1rem;">Our Story</a>
+      <a href="#menu" class="nav-link" style="font-size: 1.1rem;">The Menu</a>
+      <a href="#experiences" class="nav-link" style="font-size: 1.1rem;">Dining Rooms</a>
+      <a href="#reservation" class="nav-link" style="font-size: 1.1rem;">Reservations</a>
+      <a href="#gallery" class="nav-link" style="font-size: 1.1rem;">Gallery</a>
+      <a href="#testimonials" class="nav-link" style="font-size: 1.1rem;">Critiques</a>
+      <a href="#location" class="nav-link" style="font-size: 1.1rem;">Contact & Location</a>
+      <a href="javascript:void(0)" onclick="ProfileModule.open(); document.getElementById('mobileNavClose').click();" class="nav-link" style="font-size: 1.1rem; color: var(--color-primary); display: flex; align-items: center; gap: 8px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+        <span>Patron Account & Orders</span>
+      </a>
+      <a href="javascript:void(0)" onclick="StatusTrackerModule.open(); document.getElementById('mobileNavClose').click();" class="nav-link" style="font-size: 1.1rem; color: var(--text-muted);">Track Reservation / Order</a>
+      <div style="margin-top: 24px; padding-top: 24px; border-top: 1px solid var(--border-subtle);">
+        <button class="btn btn-primary-gold btn-block trigger-reservation-modal">Book a Table</button>
+      </div>
+    </div>
+  </div>
+
+  <main id="mainContent">
+    <!-- =========================================================================
+         1. HERO SECTION
+         ========================================================================= -->
+    <section class="hero-section" id="hero">
+      <div class="hero-background">
+        <img
+          src="assets/home-restaurant-bg.jpg"
+          alt="Spice Haven Modern Dining Sanctuary"
+          class="hero-bg-img hero-ken-burns"
+        />
+        <div class="hero-overlay"></div>
+      </div>
+
+      <!-- =========================================================================
+           TASK 6: TRUE ANIMATED CHEF PERFORMANCE (LIVING CULINARY CHARACTERS)
+           ========================================================================= -->
+      <!-- LEFT CHEF: THE SAUTÉ & FLAME VIRTUOSO (ACTIVE PAN COOKING & TOSSING) -->
+      <aside class="chef-stage chef-stage-left" id="chefPerformanceLeft" aria-label="Master Chef actively cooking at the woodfired hearth">
+        <div class="chef-culinary-badge">
+          <span class="chef-badge-dot"></span>
+          <span>Chef de Cuisine • Sauté Station</span>
+        </div>
+
+        <svg class="chef-svg chef-svg-left" viewBox="0 0 380 480" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animated chef tossing ingredients over a live flame">
+          <defs>
+            <linearGradient id="coatGradLeft" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#1E1E24" />
+              <stop offset="45%" stop-color="#141418" />
+              <stop offset="100%" stop-color="#0A0A0D" />
+            </linearGradient>
+            <linearGradient id="goldButtonGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#FFF2D6" />
+              <stop offset="50%" stop-color="#E5A93C" />
+              <stop offset="100%" stop-color="#9C6B16" />
+            </linearGradient>
+            <linearGradient id="copperPanGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#3A3A44" />
+              <stop offset="50%" stop-color="#222228" />
+              <stop offset="100%" stop-color="#121216" />
+            </linearGradient>
+            <radialGradient id="flameRadial" cx="50%" cy="80%" r="60%">
+              <stop offset="0%" stop-color="#FFE082" />
+              <stop offset="40%" stop-color="#FF7043" />
+              <stop offset="80%" stop-color="#D84315" />
+              <stop offset="100%" stop-color="transparent" />
+            </radialGradient>
+            <radialGradient id="hearthGlowGrad" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="rgba(229, 169, 60, 0.45)" />
+              <stop offset="70%" stop-color="rgba(216, 67, 21, 0.15)" />
+              <stop offset="100%" stop-color="transparent" />
+            </radialGradient>
+            <filter id="flameBlur" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="3" />
+            </filter>
+            <filter id="glowGold" x="-20%" y="-20%" width="140%" height="140%">
+              <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#E5A93C" flood-opacity="0.4" />
+            </filter>
+            <!-- REALISTIC HUMAN CHEF SKIN, HAIR & TOQUE GRADIENTS (LEFT CHEF) -->
+            <linearGradient id="chef1SkinBase" x1="0.2" y1="0" x2="0.8" y2="1">
+              <stop offset="0%" stop-color="#F2C5A5" />
+              <stop offset="45%" stop-color="#DE9E78" />
+              <stop offset="85%" stop-color="#C2825B" />
+              <stop offset="100%" stop-color="#9C5D38" />
+            </linearGradient>
+            <linearGradient id="chef1SkinShadow" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#A8663F" />
+              <stop offset="100%" stop-color="#733A18" />
+            </linearGradient>
+            <linearGradient id="chef1HairGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#362218" />
+              <stop offset="60%" stop-color="#21140E" />
+              <stop offset="100%" stop-color="#120A07" />
+            </linearGradient>
+            <linearGradient id="toqueFabricShade" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#DFDFEC" />
+              <stop offset="25%" stop-color="#FFFFFF" />
+              <stop offset="60%" stop-color="#EEEEF6" />
+              <stop offset="85%" stop-color="#D6D6E5" />
+              <stop offset="100%" stop-color="#C8C8DC" />
+            </linearGradient>
+            <linearGradient id="toqueTopDrape" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#FFFFFF" />
+              <stop offset="65%" stop-color="#F3F3FA" />
+              <stop offset="100%" stop-color="#DCDCE8" />
+            </linearGradient>
+          </defs>
+
+          <!-- Hearth Prep Countertop & Base Illumination -->
+          <ellipse cx="210" cy="430" rx="140" ry="24" fill="url(#hearthGlowGrad)" />
+          <path d="M40 430 Q210 420 370 430 L380 480 L30 480 Z" fill="#111116" stroke="rgba(229, 169, 60, 0.2)" stroke-width="1.5" />
+          <line x1="60" y1="431" x2="350" y2="431" stroke="rgba(229, 169, 60, 0.4)" stroke-width="2" />
+
+          <!-- Burner Stove Grate -->
+          <ellipse cx="255" cy="385" rx="55" ry="12" fill="#18181E" stroke="#33333E" stroke-width="2" />
+          <path d="M220 385 Q255 380 290 385" stroke="#444452" stroke-width="2.5" />
+          <path d="M255 373 L255 397" stroke="#444452" stroke-width="2" />
+
+          <!-- DYNAMIC HEARTH FLAMES (SURGES & FLICKERS ON TOSS) -->
+          <g class="hearth-flame-group">
+            <!-- Core Blue Pilot Flame -->
+            <ellipse class="flame-blue-core" cx="255" cy="384" rx="28" ry="7" fill="#42A5F5" opacity="0.85" filter="url(#flameBlur)" />
+            <!-- Active Golden/Amber Fire Reaction Tongues -->
+            <path class="flame-tongue flame-tongue-1" d="M235 385 Q245 345 250 330 Q258 355 265 385 Z" fill="url(#flameRadial)" filter="url(#flameBlur)" />
+            <path class="flame-tongue flame-tongue-2" d="M248 385 Q258 335 264 315 Q272 350 280 385 Z" fill="url(#flameRadial)" filter="url(#flameBlur)" />
+            <path class="flame-tongue flame-tongue-3" d="M225 386 Q238 355 242 340 Q248 368 252 386 Z" fill="url(#flameRadial)" filter="url(#flameBlur)" />
+          </g>
+
+          <!-- CHEF BODY & TORSO (DOUBLE-BREASTED LUXURY CHEF JACKET) -->
+          <g class="chef-torso-group">
+            <!-- Torso / Coat -->
+            <path d="M60 440 L85 240 Q130 220 185 240 L195 440 Z" fill="url(#coatGradLeft)" stroke="#2A2A34" stroke-width="1.5" />
+            <!-- Collar / Mandarin Lapel with Gold Trim -->
+            <path d="M105 235 Q135 245 165 235 L170 215 Q135 210 100 215 Z" fill="#18181E" stroke="var(--color-primary)" stroke-width="1.2" />
+            <!-- Double-Breasted Golden Brass Buttons -->
+            <circle cx="125" cy="275" r="3.5" fill="url(#goldButtonGrad)" filter="url(#glowGold)" />
+            <circle cx="150" cy="275" r="3.5" fill="url(#goldButtonGrad)" filter="url(#glowGold)" />
+            <circle cx="123" cy="315" r="3.5" fill="url(#goldButtonGrad)" filter="url(#glowGold)" />
+            <circle cx="148" cy="315" r="3.5" fill="url(#goldButtonGrad)" filter="url(#glowGold)" />
+            <circle cx="120" cy="355" r="3.5" fill="url(#goldButtonGrad)" filter="url(#glowGold)" />
+            <circle cx="145" cy="355" r="3.5" fill="url(#goldButtonGrad)" filter="url(#glowGold)" />
+            <!-- Apron Tie / Waist Ribbon -->
+            <path d="M80 395 Q140 405 190 395 L192 410 Q140 420 78 410 Z" fill="#0C0C10" />
+          </g>
+
+          <!-- CHEF HEAD & TOQUE: REALISTIC PROFESSIONAL HUMAN CHEF (LEFT CHEF) -->
+          <g class="chef-head-group">
+            <!-- Realistic Neck with Anatomical Muscle Definition & Hearth Glow -->
+            <g class="chef-neck-assembly">
+              <path d="M116 182 Q112 210 108 234 L154 234 Q152 208 146 182 Z" fill="url(#chef1SkinBase)" />
+              <path d="M120 184 Q126 208 136 234 L144 234 Q134 205 128 184 Z" fill="url(#chef1SkinShadow)" opacity="0.45" />
+              <path d="M142 198 Q144 206 142 214 Q138 210 138 202 Z" fill="#9C5D38" opacity="0.4" />
+              <path d="M144 190 Q148 212 144 232" stroke="rgba(229, 169, 60, 0.6)" stroke-width="2.2" stroke-linecap="round" fill="none" />
+            </g>
+
+            <!-- Hair (Back of Neck & Nape Base) -->
+            <path d="M110 178 Q106 195 110 208 Q115 210 116 195 Q115 182 112 178 Z" fill="url(#chef1HairGrad)" />
+
+            <!-- Realistic Head & Facial Cranium (3/4 Profile Angled Toward Pan) -->
+            <g class="chef-face-assembly">
+              <path d="M106 150 L114 148 L158 148 Q160 156 158 164 Q155 166 153 167 L156 173 Q156 177 151 178 L147 179 Q150 182 147 185 L144 186 Q146 190 144 195 Q141 199 135 198 Q124 195 118 190 Q110 185 106 175 Z" fill="url(#chef1SkinBase)" />
+              <path d="M118 188 Q128 194 136 197 Q142 197 144 193 Q138 188 128 182 Q120 182 118 188 Z" fill="url(#chef1SkinShadow)" opacity="0.5" />
+              <path d="M128 168 Q140 170 146 176" stroke="#9C5D38" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.3" />
+
+              <!-- Realistic Ear (Anatomical Folds, Helix & Tragus) -->
+              <g class="chef-ear">
+                <path d="M114 162 Q122 158 123 166 Q124 176 117 180 Q112 182 112 176 Q112 170 114 162 Z" fill="#D69772" stroke="#9C5D38" stroke-width="0.8" />
+                <path d="M116 166 Q120 164 120 170 Q119 174 115 174 Z" fill="#733A18" opacity="0.65" />
+                <path d="M118 168 Q116 170 116 173" stroke="#D69772" stroke-width="1.2" stroke-linecap="round" fill="none" />
+              </g>
+
+              <!-- Realistic Hair: Groomed Sideburn & Temple Lock -->
+              <path d="M114 148 L118 148 L120 166 Q117 172 115 168 L114 158 Z" fill="url(#chef1HairGrad)" />
+              <path d="M118 148 Q124 150 126 156 L124 158 Q120 152 116 150 Z" fill="url(#chef1HairGrad)" />
+
+              <!-- Realistic Nose (Nasal Bridge, Tip & Nostril Contour) -->
+              <g class="chef-nose">
+                <path d="M152 163 L150 168 L155 174 Q155 177 151 178 L146 177" stroke="#8A4822" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.65" />
+                <circle cx="153.5" cy="173" r="1.2" fill="#FDE2D0" opacity="0.75" />
+                <ellipse cx="149" cy="176" rx="2" ry="1.2" fill="#5E2B0E" opacity="0.6" />
+              </g>
+
+              <!-- Realistic Human Eye & Eyebrow in Intense Focus -->
+              <g class="chef-eye">
+                <path d="M141 159 Q148 156 155 161" stroke="url(#chef1HairGrad)" stroke-width="2.6" stroke-linecap="round" fill="none" />
+                <path d="M144 158 Q150 156 154 160" stroke="#4A3125" stroke-width="1" stroke-linecap="round" fill="none" />
+                <path d="M142 162 Q147 161 152 164" stroke="#8A4822" stroke-width="0.8" stroke-linecap="round" fill="none" opacity="0.7" />
+                <path d="M142 165 Q147 163 152 166 Q147 169 143 167 Z" fill="#F4EFEA" stroke="#8A4822" stroke-width="0.6" />
+                <circle cx="147.5" cy="166" r="2.1" fill="#4E342E" />
+                <circle cx="147.8" cy="166" r="1.1" fill="#150E0B" />
+                <circle cx="148.4" cy="165.4" r="0.6" fill="#FFFFFF" />
+                <path d="M143 168 Q147 170 152 168" stroke="#9C5D38" stroke-width="0.8" stroke-linecap="round" fill="none" opacity="0.45" />
+              </g>
+
+              <!-- Mature Executive Chef Grooming: Realistic Trimmed Stubble & Lips -->
+              <g class="chef-mouth-stubble">
+                <path d="M147 180 Q150 181 146 183 L142 183" stroke="#8A4822" stroke-width="1.2" stroke-linecap="round" fill="none" />
+                <path d="M143 184 Q146 186 142 187" stroke="#B86C45" stroke-width="1.4" stroke-linecap="round" fill="none" />
+                <path d="M120 186 Q130 190 142 192 M124 188 Q134 192 140 195" stroke="#362218" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="1 3" opacity="0.38" fill="none" />
+              </g>
+            </g>
+
+            <!-- REALISTIC PROFESSIONAL CHEF TOQUE (HAT) -->
+            <g class="chef-toque-assembly">
+              <path d="M104 150 Q135 145 166 150 L165 154 Q135 149 104 154 Z" fill="rgba(0, 0, 0, 0.4)" />
+              <path d="M104 144 Q98 115 106 88 Q120 68 140 68 Q164 68 174 94 Q178 118 166 144 Z" fill="url(#toqueTopDrape)" stroke="#C8C8DC" stroke-width="1.2" />
+              <path d="M112 142 Q108 108 116 82" stroke="#BEBED2" stroke-width="2.2" stroke-linecap="round" fill="none" opacity="0.75" />
+              <path d="M124 142 Q120 102 126 74" stroke="#BEBED2" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.65" />
+              <path d="M138 142 Q136 98 138 70" stroke="#BEBED2" stroke-width="2.6" stroke-linecap="round" fill="none" opacity="0.6" />
+              <path d="M152 142 Q150 104 150 74" stroke="#BEBED2" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.65" />
+              <path d="M162 142 Q166 112 162 84" stroke="#BEBED2" stroke-width="2.2" stroke-linecap="round" fill="none" opacity="0.75" />
+              <path d="M120 78 Q138 84 156 78" stroke="#D0D0E2" stroke-width="1.8" fill="none" />
+              <g class="toque-headband">
+                <path d="M102 142 Q135 136 168 142 L168 152 Q135 146 102 152 Z" fill="url(#toqueFabricShade)" stroke="#BCBCCD" stroke-width="1" />
+                <path d="M102 142 Q135 136 168 142" stroke="url(#goldButtonGrad)" stroke-width="1.6" fill="none" />
+                <path d="M102 151 Q135 145 168 151" stroke="url(#goldButtonGrad)" stroke-width="1.6" fill="none" />
+              </g>
+            </g>
+          </g>
+
+          <!-- ARTICULATED ACTIVE COOKING ARM & PAN (TOSSES FOOD & REACTS) -->
+          <g class="chef-left-arm-assembly">
+            <!-- Shoulder Anchor & Bicep / Upper Arm -->
+            <g class="chef-left-upperarm">
+              <path d="M165 240 Q185 270 200 310 Q180 320 165 290 Q155 260 165 240 Z" fill="url(#coatGradLeft)" stroke="#262630" stroke-width="1.2" />
+              
+              <!-- Forearm & Wrist (Flexes and Drives Sauté Motion) -->
+              <g class="chef-left-forearm">
+                <path d="M195 305 Q225 320 250 345 Q240 358 215 340 Q190 325 195 305 Z" fill="url(#coatGradLeft)" stroke="#262630" stroke-width="1.2" />
+                <!-- Crisp White Cuff -->
+                <path d="M242 338 L254 348 L248 355 L236 345 Z" fill="#EDEDF2" stroke="var(--color-primary)" stroke-width="1" />
+                <!-- Chef Hand firmly gripping pan handle -->
+                <path d="M250 344 Q262 352 268 348 Q272 355 264 362 Q255 362 248 354 Z" fill="#DCA384" />
+                
+                <!-- COOKING PAN WITH EXTENDED ERGONOMIC HANDLE -->
+                <g class="chef-left-pan">
+                  <!-- Steel Pan Handle -->
+                  <path d="M252 352 L225 366 Q220 368 212 370" stroke="#888894" stroke-width="4.5" stroke-linecap="round" />
+                  <path d="M252 352 L225 366" stroke="#C0C0CE" stroke-width="2" stroke-linecap="round" />
+                  
+                  <!-- Sauté Pan Body (Heavy Carbon Steel / Copper Base) -->
+                  <g class="pan-body-group">
+                    <ellipse cx="258" cy="374" rx="46" ry="14" fill="url(#copperPanGrad)" stroke="#4A4A58" stroke-width="1.8" />
+                    <!-- Inner Searing Surface with Golden Cooking Oil Sheen -->
+                    <ellipse cx="258" cy="374" rx="38" ry="10" fill="#16161C" />
+                    <ellipse cx="258" cy="375" rx="34" ry="7" fill="rgba(229, 169, 60, 0.25)" />
+                    <!-- Rim Highlight -->
+                    <path d="M213 374 Q258 386 303 374" stroke="rgba(255, 242, 214, 0.6)" stroke-width="1.5" />
+                  </g>
+
+                  <!-- TOSSING FOOD INGREDIENTS (PARABOLIC TOSS ARC) -->
+                  <g class="pan-food-group">
+                    <!-- Sizzling Wagyu Morsel 1 -->
+                    <rect class="food-tossed food-tossed-1" x="242" y="367" width="10" height="7" rx="2" fill="#792828" stroke="#E5A93C" stroke-width="0.8" />
+                    <!-- Seared King Oyster Mushroom 2 -->
+                    <ellipse class="food-tossed food-tossed-2" cx="260" cy="369" rx="6" ry="4" fill="#D7CCC8" stroke="#8D6E63" stroke-width="0.8" />
+                    <!-- Sweet Crimson Bell Pepper 3 -->
+                    <path class="food-tossed food-tossed-3" d="M270 368 Q276 364 280 370" stroke="#E53935" stroke-width="3" stroke-linecap="round" />
+                    <!-- Fresh Chive / Herb Flakes 4 -->
+                    <circle class="food-tossed food-tossed-4" cx="252" cy="370" r="2" fill="#4CAF50" />
+                    <circle class="food-tossed food-tossed-5" cx="266" cy="367" r="1.8" fill="#81C784" />
+                  </g>
+
+                  <!-- ACTIVE SEARING SMOKE & VOLUMETRIC STEAM PLUMES -->
+                  <g class="chef-steam-left">
+                    <path class="steam-wisp steam-wisp-1" d="M250 365 Q240 325 248 290 Q258 260 250 230" stroke="rgba(255, 255, 255, 0.35)" stroke-width="4.5" fill="none" stroke-linecap="round" filter="url(#flameBlur)" />
+                    <path class="steam-wisp steam-wisp-2" d="M265 365 Q278 320 270 285 Q262 250 272 220" stroke="rgba(255, 240, 220, 0.3)" stroke-width="3.5" fill="none" stroke-linecap="round" filter="url(#flameBlur)" />
+                    <path class="steam-wisp steam-wisp-3" d="M258 360 Q250 310 262 270" stroke="rgba(255, 255, 255, 0.25)" stroke-width="2.8" fill="none" stroke-linecap="round" filter="url(#flameBlur)" />
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </aside>
+
+      <!-- RIGHT CHEF: THE PLATING & GARNISH ARTISAN (ACTIVE PLATING & SEASONING) -->
+      <aside class="chef-stage chef-stage-right" id="chefPerformanceRight" aria-label="Master Chef actively plating and garnishing fine gastronomy">
+        <div class="chef-culinary-badge">
+          <span class="chef-badge-dot"></span>
+          <span>Chef Entremetier • Plating Atelier</span>
+        </div>
+
+        <svg class="chef-svg chef-svg-right" viewBox="0 0 380 480" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animated chef delicately seasoning and plating a gourmet dish">
+          <defs>
+            <linearGradient id="coatGradRight" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#22222A" />
+              <stop offset="50%" stop-color="#16161C" />
+              <stop offset="100%" stop-color="#0A0A0D" />
+            </linearGradient>
+            <linearGradient id="plateGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#2C2C34" />
+              <stop offset="50%" stop-color="#1A1A20" />
+              <stop offset="100%" stop-color="#101014" />
+            </linearGradient>
+            <radialGradient id="clocheGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="rgba(229, 169, 60, 0.4)" />
+              <stop offset="75%" stop-color="rgba(229, 169, 60, 0.08)" />
+              <stop offset="100%" stop-color="transparent" />
+            </radialGradient>
+            <!-- REALISTIC HUMAN CHEF SKIN & HAIR GRADIENTS (RIGHT CHEF) -->
+            <linearGradient id="chef2SkinBase" x1="0.8" y1="0" x2="0.2" y2="1">
+              <stop offset="0%" stop-color="#F4C7A8" />
+              <stop offset="45%" stop-color="#E0A07B" />
+              <stop offset="85%" stop-color="#C4845D" />
+              <stop offset="100%" stop-color="#9E5F3A" />
+            </linearGradient>
+            <linearGradient id="chef2SkinShadow" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#A96740" />
+              <stop offset="100%" stop-color="#723A19" />
+            </linearGradient>
+            <linearGradient id="chef2HairGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#2D211A" />
+              <stop offset="60%" stop-color="#1A130F" />
+              <stop offset="100%" stop-color="#0E0A08" />
+            </linearGradient>
+          </defs>
+
+          <!-- Plating Counter / Slate Pass with Rim Illumination -->
+          <ellipse cx="170" cy="430" rx="140" ry="24" fill="url(#clocheGlow)" />
+          <path d="M10 430 Q170 420 340 430 L350 480 L0 480 Z" fill="#111116" stroke="rgba(229, 169, 60, 0.2)" stroke-width="1.5" />
+          <line x1="30" y1="431" x2="320" y2="431" stroke="rgba(229, 169, 60, 0.4)" stroke-width="2" />
+
+          <!-- LUXURY ARTISAN STONEWARE PLATE -->
+          <g class="plated-dish-group">
+            <!-- Plate Outer Rim -->
+            <ellipse cx="130" cy="390" rx="65" ry="18" fill="url(#plateGrad)" stroke="#4A4A58" stroke-width="1.5" />
+            <!-- Plate Deep Interior Well -->
+            <ellipse cx="130" cy="391" rx="48" ry="12" fill="#0D0D12" stroke="rgba(229, 169, 60, 0.3)" stroke-width="1" />
+            <!-- Artistic Gastronomic Swirl (Beetroot & Truffle Emulsion) -->
+            <path d="M100 392 Q125 385 155 391 Q140 398 112 394" stroke="#8E24AA" stroke-width="2.5" fill="none" stroke-linecap="round" />
+            <!-- Center Roasted Medallion (Woodfired Wagyu Cut) -->
+            <ellipse cx="130" cy="390" rx="14" ry="7" fill="#4E342E" stroke="#E5A93C" stroke-width="0.8" />
+            <ellipse cx="130" cy="389" rx="11" ry="5" fill="#6D4C41" />
+            <!-- Micro-Greens Crown -->
+            <circle cx="127" cy="387" r="2.5" fill="#43A047" />
+            <circle cx="133" cy="388" r="2.2" fill="#66BB6A" />
+
+            <!-- AROMATIC DISH STEAM (WARM FRESHLY PREPARED ENTREE) -->
+            <g class="chef-steam-right">
+              <path class="steam-wisp-r steam-wisp-r1" d="M125 382 Q120 340 128 305 Q135 270 126 240" stroke="rgba(255, 255, 255, 0.28)" stroke-width="3.5" fill="none" stroke-linecap="round" filter="url(#flameBlur)" />
+              <path class="steam-wisp-r steam-wisp-r2" d="M135 382 Q144 345 138 310 Q130 275 140 245" stroke="rgba(255, 245, 220, 0.24)" stroke-width="2.8" fill="none" stroke-linecap="round" filter="url(#flameBlur)" />
+            </g>
+          </g>
+
+          <!-- CHEF BODY & TORSO (CHARCOAL DOUBLE-BREASTED JACKET) -->
+          <g class="chef-right-torso">
+            <path d="M185 440 L195 240 Q250 220 295 240 L320 440 Z" fill="url(#coatGradRight)" stroke="#2A2A34" stroke-width="1.5" />
+            <!-- Gold Trim Collar / Neck Band -->
+            <path d="M215 235 Q245 245 275 235 L280 215 Q245 210 210 215 Z" fill="#18181E" stroke="var(--color-primary)" stroke-width="1.2" />
+            <!-- Double-Breasted Golden Buttons -->
+            <circle cx="235" cy="275" r="3.5" fill="url(#goldButtonGrad)" filter="url(#glowGold)" />
+            <circle cx="260" cy="275" r="3.5" fill="url(#goldButtonGrad)" filter="url(#glowGold)" />
+            <circle cx="237" cy="315" r="3.5" fill="url(#goldButtonGrad)" filter="url(#glowGold)" />
+            <circle cx="262" cy="315" r="3.5" fill="url(#goldButtonGrad)" filter="url(#glowGold)" />
+            <circle cx="240" cy="355" r="3.5" fill="url(#goldButtonGrad)" filter="url(#glowGold)" />
+            <circle cx="265" cy="355" r="3.5" fill="url(#goldButtonGrad)" filter="url(#glowGold)" />
+            <!-- Waist Apron Band -->
+            <path d="M190 395 Q250 405 310 395 L312 410 Q250 420 188 410 Z" fill="#0C0C10" />
+          </g>
+
+          <!-- CHEF HEAD & TOQUE: REALISTIC PROFESSIONAL HUMAN CHEF (RIGHT CHEF) -->
+          <g class="chef-right-head-group">
+            <!-- Realistic Neck with Natural Angle & Plating Ambient Light -->
+            <g class="chef-right-neck-assembly">
+              <path d="M226 182 Q228 210 226 234 L272 234 Q268 208 264 182 Z" fill="url(#chef2SkinBase)" />
+              <path d="M246 184 Q240 208 234 234 L244 234 Q250 205 254 184 Z" fill="url(#chef2SkinShadow)" opacity="0.45" />
+              <!-- Subtle Throat Contour -->
+              <path d="M236 196 Q234 204 236 212" stroke="#9E5F3A" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.4" />
+            </g>
+
+            <!-- Hair (Back of Neck & Nape Base) -->
+            <path d="M268 178 Q274 195 270 208 Q265 210 264 195 Q265 182 268 178 Z" fill="url(#chef2HairGrad)" />
+
+            <!-- Realistic Head & Facial Cranium (3/4 Profile Angled Toward Plated Dish) -->
+            <g class="chef-right-face-assembly">
+              <!-- Full Face Base with Anatomical Jaw, Cheek & Forehead Silhouette -->
+              <path d="M274 150 
+                       L266 148 
+                       L222 148 
+                       Q220 156 222 164 
+                       Q225 166 227 167 
+                       L224 173 
+                       Q224 177 229 178 
+                       L233 179 
+                       Q230 182 233 185 
+                       L236 186 
+                       Q234 190 236 195 
+                       Q239 199 245 198 
+                       Q256 195 262 190 
+                       Q270 185 274 175 
+                       Z" 
+                    fill="url(#chef2SkinBase)" />
+
+              <!-- Anatomical Jawline & Cheekbone Shadow -->
+              <path d="M262 188 Q252 194 244 197 Q238 197 236 193 Q242 188 252 182 Q260 182 262 188 Z" fill="url(#chef2SkinShadow)" opacity="0.5" />
+              <!-- Cheek Plane / Zygomatic Contour -->
+              <path d="M252 168 Q240 170 234 176" stroke="#9E5F3A" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.3" />
+
+              <!-- Realistic Ear on Right Profile -->
+              <g class="chef-right-ear">
+                <path d="M266 162 Q258 158 257 166 Q256 176 263 180 Q268 182 268 176 Q268 170 266 162 Z" fill="#D89973" stroke="#9E5F3A" stroke-width="0.8" />
+                <path d="M264 166 Q260 164 260 170 Q261 174 265 174 Z" fill="#723A19" opacity="0.65" />
+                <path d="M262 168 Q264 170 264 173" stroke="#D89973" stroke-width="1.2" stroke-linecap="round" fill="none" />
+              </g>
+
+              <!-- Modern Clean Hair: Tapered Sideburn & Temple Lock -->
+              <path d="M266 148 L262 148 L260 166 Q263 172 265 168 L266 158 Z" fill="url(#chef2HairGrad)" />
+              <path d="M262 148 Q256 150 254 156 L256 158 Q260 152 264 150 Z" fill="url(#chef2HairGrad)" />
+
+              <!-- Realistic Refined Nose (Nasal Bridge, Tip & Nostril Contour) -->
+              <g class="chef-right-nose">
+                <path d="M228 163 L230 168 L225 174 Q225 177 229 178 L234 177" stroke="#8B4A23" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.65" />
+                <circle cx="226.5" cy="173" r="1.2" fill="#FDE2D0" opacity="0.75" />
+                <ellipse cx="231" cy="176" rx="2" ry="1.2" fill="#5F2C0F" opacity="0.6" />
+              </g>
+
+              <!-- Realistic Human Eye & Eyebrow in Intense Focus on Plating -->
+              <g class="chef-right-eye">
+                <!-- Natural Focused Brow -->
+                <path d="M239 159 Q232 156 225 161" stroke="url(#chef2HairGrad)" stroke-width="2.6" stroke-linecap="round" fill="none" />
+                <path d="M236 158 Q230 156 226 160" stroke="#443228" stroke-width="1" stroke-linecap="round" fill="none" />
+                <!-- Eyelid Lowered in Precision Inspection -->
+                <path d="M238 162 Q233 161 228 164" stroke="#8B4A23" stroke-width="0.8" stroke-linecap="round" fill="none" opacity="0.7" />
+                <!-- Eye Sclera (Natural Warm Ivory) -->
+                <path d="M238 165 Q233 163 228 166 Q233 169 237 167 Z" fill="#F4EFEA" stroke="#8B4A23" stroke-width="0.6" />
+                <!-- Deep Brown Iris & Pupil Looking Down at Plate -->
+                <circle cx="232.5" cy="166.5" r="2.1" fill="#3E2723" />
+                <circle cx="232.2" cy="166.5" r="1.1" fill="#150E0B" />
+                <!-- Catchlight Highlight -->
+                <circle cx="231.6" cy="165.8" r="0.6" fill="#FFFFFF" />
+                <!-- Lower Eyelid Edge -->
+                <path d="M237 168 Q233 170 228 168" stroke="#9E5F3A" stroke-width="0.8" stroke-linecap="round" fill="none" opacity="0.45" />
+              </g>
+
+              <!-- Precision Plating Expression: Subtle Focused Lips & Jaw Definition -->
+              <g class="chef-right-mouth">
+                <!-- Upper Lip -->
+                <path d="M233 180 Q230 181 234 183 L238 183" stroke="#8B4A23" stroke-width="1.2" stroke-linecap="round" fill="none" />
+                <!-- Lower Lip & Philtrum -->
+                <path d="M237 184 Q234 186 238 187" stroke="#BA6F48" stroke-width="1.4" stroke-linecap="round" fill="none" />
+                <!-- Clean Modern Shave with Natural Chin Cleft Depth -->
+                <path d="M242 195 Q246 197 250 194" stroke="#9E5F3A" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.35" />
+              </g>
+            </g>
+
+            <!-- REALISTIC PROFESSIONAL CHEF TOQUE (HAT) -->
+            <g class="chef-right-toque-assembly">
+              <path d="M276 150 Q245 145 214 150 L215 154 Q245 149 276 154 Z" fill="rgba(0, 0, 0, 0.4)" />
+              <path d="M276 144 Q282 115 274 88 Q260 68 240 68 Q216 68 206 94 Q202 118 214 144 Z" fill="url(#toqueTopDrape)" stroke="#C8C8DC" stroke-width="1.2" />
+              <path d="M268 142 Q272 108 264 82" stroke="#BEBED2" stroke-width="2.2" stroke-linecap="round" fill="none" opacity="0.75" />
+              <path d="M256 142 Q260 102 254 74" stroke="#BEBED2" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.65" />
+              <path d="M242 142 Q244 98 242 70" stroke="#BEBED2" stroke-width="2.6" stroke-linecap="round" fill="none" opacity="0.6" />
+              <path d="M228 142 Q230 104 230 74" stroke="#BEBED2" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.65" />
+              <path d="M218 142 Q214 112 218 84" stroke="#BEBED2" stroke-width="2.2" stroke-linecap="round" fill="none" opacity="0.75" />
+              <path d="M260 78 Q242 84 224 78" stroke="#D0D0E2" stroke-width="1.8" fill="none" />
+              <g class="toque-headband">
+                <path d="M278 142 Q245 136 212 142 L212 152 Q245 146 278 152 Z" fill="url(#toqueFabricShade)" stroke="#BCBCCD" stroke-width="1" />
+                <path d="M278 142 Q245 136 212 142" stroke="url(#goldButtonGrad)" stroke-width="1.6" fill="none" />
+                <path d="M278 151 Q245 145 212 151" stroke="url(#goldButtonGrad)" stroke-width="1.6" fill="none" />
+              </g>
+            </g>
+          </g>
+
+          <!-- STEADYING LEFT ARM (RESTS AT PLATE RIM) -->
+          <g class="chef-right-steady-arm">
+            <path d="M215 240 Q180 270 160 320 Q175 328 190 290 Q205 260 215 240 Z" fill="url(#coatGradRight)" stroke="#24242E" stroke-width="1.2" />
+            <path d="M162 315 Q145 350 142 380 Q152 385 168 355 Q174 330 162 315 Z" fill="url(#coatGradRight)" stroke="#24242E" stroke-width="1.2" />
+            <path d="M142 375 L146 385 L140 388 L136 378 Z" fill="#EDEDF2" stroke="var(--color-primary)" stroke-width="1" />
+            <ellipse cx="140" cy="386" rx="5" ry="4" fill="#DCA384" />
+          </g>
+
+          <!-- ARTICULATED ACTIVE GARNISH ARM & SEASONING FINGERS -->
+          <g class="chef-right-garnish-assembly">
+            <g class="chef-garnish-upperarm">
+              <!-- Upper Arm (Reaches gracefully toward the plate) -->
+              <path d="M205 245 Q180 280 165 315 Q152 308 172 270 Q192 240 205 245 Z" fill="url(#coatGradRight)" stroke="#24242E" stroke-width="1.2" />
+
+              <!-- Forearm & Pinching Fingers (Dips, Sprinkles & Garnishes) -->
+              <g class="chef-garnish-forearm">
+                <path d="M165 310 Q145 330 132 345 Q125 338 145 318 Q158 305 165 310 Z" fill="url(#coatGradRight)" stroke="#24242E" stroke-width="1.2" />
+                <!-- Crisp Cuff -->
+                <path d="M136 340 L130 348 L124 343 L130 335 Z" fill="#EDEDF2" stroke="var(--color-primary)" stroke-width="1" />
+                
+                <!-- Hand & Precision Tweezer/Fingertips with Maldon Salt Pinch -->
+                <g class="chef-garnish-hand">
+                  <path d="M130 345 Q125 352 128 358 Q132 360 134 354 Q135 348 130 345 Z" fill="#DCA384" />
+                  <!-- Gold Plating Tweezers -->
+                  <path d="M128 352 L124 372 M130 353 L126 372" stroke="url(#goldButtonGrad)" stroke-width="1.5" stroke-linecap="round" />
+                  
+                  <!-- SEASONING FLURRY CASCADE (MALDON SALT & MICRO-HERBS FALLING ON DISH) -->
+                  <g class="garnish-particles-group">
+                    <circle class="garnish-salt salt-1" cx="125" cy="374" r="1.5" fill="#FFFFFF" filter="url(#glowGold)" />
+                    <circle class="garnish-salt salt-2" cx="127" cy="377" r="1.3" fill="#FFF9C4" />
+                    <circle class="garnish-salt salt-3" cx="123" cy="380" r="1.6" fill="#FFFFFF" />
+                    <circle class="garnish-salt salt-4" cx="128" cy="383" r="1.2" fill="#E0F7FA" />
+                    <!-- Chervil Micro Herb Flake -->
+                    <path class="garnish-salt herb-1" d="M124 376 Q127 375 125 378" stroke="#4CAF50" stroke-width="1.5" stroke-linecap="round" />
+                    <path class="garnish-salt herb-2" d="M127 381 Q130 380 128 383" stroke="#81C784" stroke-width="1.2" stroke-linecap="round" />
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </aside>
+
+      <div class="container hero-content">
+        <div class="hero-badge-wrap hero-animate-1">
+          <span class="badge-prestige brand-badge-insert">Michelin Guide Selection • 2026</span>
+        </div>
+
+        <div class="hero-brand-eyebrow brand-name-insert" style="font-family: var(--font-sans); font-size: 0.9rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--color-primary); margin-bottom: 12px; font-weight: 700;">
+          Spice Haven
+        </div>
+
+        <h1 class="hero-title hero-animate-2">
+          <span class="title-top" id="heroHeadingPrefix">An Exquisite Symphony of</span>
+          <span class="title-accent" id="heroHeadingEmphasis">Fire, Spice & Soul</span>
+        </h1>
+
+        <p class="hero-desc hero-animate-3" id="heroSubheading">
+          Indulge in a curated sensory journey where ancient culinary heritage converges with modern culinary artistry. Every dish is a tribute to rare spices and woodfired perfection.
+        </p>
+
+        <div class="hero-cta-group hero-animate-4">
+          <a href="#menu" class="btn btn-primary-gold btn-lg gold-shimmer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+            </svg>
+            Explore Menu
+          </a>
+          <button class="btn btn-outline-gold btn-lg trigger-reservation-modal">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            Reserve a Table
+          </button>
+        </div>
+
+        <!-- Accolades Counter Strip -->
+        <div class="accolades-strip hero-animate-5" id="accoladesTicker">
+          <!-- Populated dynamically from RestaurantConfig.accolades -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         2. OUR STORY & CHEF'S SPOTLIGHT SECTION
+         ========================================================================= -->
+    <section class="section" id="story">
+      <div class="container">
+        <div class="story-grid">
+          <!-- Left: Story Narrative -->
+          <div class="story-content-column reveal-left">
+            <span class="section-tag" id="storySubheading">A Sanctuary for the Connoisseur</span>
+            <h2 class="section-title" id="storyHeading">Crafted with Obsession. Served with Reverence.</h2>
+            <p id="storyText1" style="margin-bottom: 16px;">
+              Founded in 2019 by Master Chef Julian Vance, Spice Haven was conceived as an ode to untamed culinary craftsmanship. We scour secluded spice plantations across the Malabar coast, Kashmir valley, and Southeast Asia to source rare, single-origin botanicals.
+            </p>
+            <p id="storyText2">
+              Every cut of meat is dry-aged on site in Himalayan pink salt chambers. Our broths simmer patiently for 48 hours over heritage charcoal, coaxing profound depth and intoxicating aromas that linger long after the final sip.
+            </p>
+
+            <div class="story-quote-box">
+              <p class="story-quote-text" id="storyQuote">
+                “Cooking at this echelon is not merely technique; it is a sacred transfer of memory, heat, and emotion onto the plate.”
+              </p>
+            </div>
+
+            <div class="chef-signature-block">
+              <img
+                src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=200&q=80"
+                alt="Executive Chef Julian Vance"
+                class="chef-avatar"
+              />
+              <div class="chef-details">
+                <h4 id="chefName">Julian Vance</h4>
+                <p id="chefRole">Executive Chef & Founder • Recipient of Global Gastronomy Gold Ribbon</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Visual Composition -->
+          <div class="story-media-column reveal-right">
+            <div class="story-img-main-wrap">
+              <img
+                src="assets/food-composition.jpg"
+                alt="Artisanal Truffle Glazed Kebab Gastronomic Composition"
+                class="story-img-main"
+                loading="lazy"
+              />
+            </div>
+            <div class="story-img-badge">
+              <div class="badge-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <div class="badge-text">100% Single-Origin Botanical Spices</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. INTERACTIVE MENU CATALOG & ORDERING
+         ========================================================================= -->
+    <section class="section restaurant-bg-section" id="menu">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Epicurean Selections</span>
+          <h2 class="section-title">The Seasonal Degustation & À La Carte</h2>
+          <p class="section-description">
+            Each creation is an exploration of indigenous spices, bespoke wood smoke, and exquisite presentation. Add any dish to your order for dine-in pre-service or curated takeout.
+          </p>
+        </div>
+
+        <!-- Smart Search & Filter Control Hub -->
+        <div class="menu-controls-hub reveal">
+          <!-- Top Row: Search Input + Price Filter + Sort Order + Results Counter -->
+          <div class="menu-controls-top-row">
+            <!-- Search Bar with Instant Clear Button -->
+            <div class="menu-search-wrapper">
+              <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input
+                type="text"
+                id="menuSearchInput"
+                class="form-input menu-search-input"
+                placeholder="Search dishes, ingredients, courses, or pairings..."
+                aria-label="Search culinary creations"
+              />
+              <button
+                type="button"
+                id="menuSearchClearBtn"
+                class="menu-search-clear-btn"
+                aria-label="Clear search input"
+                title="Clear search"
+                style="display: none;"
+              >
+                &times;
+              </button>
+            </div>
+
+            <!-- Price Range Filter Dropdown -->
+            <div class="menu-select-wrapper">
+              <label for="menuPriceSelect" class="sr-only">Filter by Price Range</label>
+              <select id="menuPriceSelect" class="form-select menu-filter-select" aria-label="Filter by Price">
+                <option value="all">💎 All Prices</option>
+                <option value="under-2000">Under ₹2,000</option>
+                <option value="2000-4000">₹2,000 – ₹4,000</option>
+                <option value="above-4000">Above ₹4,000</option>
+              </select>
+            </div>
+
+            <!-- Sort By Selector Dropdown -->
+            <div class="menu-select-wrapper">
+              <label for="menuSortSelect" class="sr-only">Sort Menu Items</label>
+              <select id="menuSortSelect" class="form-select menu-filter-select" aria-label="Sort Menu">
+                <option value="recommended">✨ Chef's Recommended</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="name-asc">Alphabetical: A to Z</option>
+              </select>
+            </div>
+
+            <!-- Live Results Counter Badge -->
+            <div class="menu-results-badge" id="menuResultsCount">
+              Loading...
+            </div>
+          </div>
+
+          <!-- Secondary Row: Authentic Dietary Filter Chips -->
+          <div class="menu-dietary-pills-row">
+            <button type="button" class="diet-tag dietary-filter-chip active" data-dietary="all">All Dietary</button>
+            <button type="button" class="diet-tag dietary-filter-chip" data-dietary="veg">Pure Veg</button>
+            <button type="button" class="diet-tag dietary-filter-chip" data-dietary="non-veg">Non-Veg</button>
+            <button type="button" class="diet-tag dietary-filter-chip" data-dietary="seafood">Seafood</button>
+            <button type="button" class="diet-tag special dietary-filter-chip" data-dietary="special">★ Chef's Signature</button>
+            <button type="button" class="diet-tag dietary-filter-chip" data-dietary="gluten-free">Gluten-Free</button>
+            <button type="button" class="diet-tag vegan dietary-filter-chip" data-dietary="vegan">Vegan & Plant</button>
+          </div>
+
+          <!-- Active Filter Removable Badges Bar -->
+          <div id="menuActiveFilterBadges" class="active-filter-badges-container" style="display: none;"></div>
+        </div>
+
+        <!-- Dynamic Category Switcher Tabs -->
+        <div class="category-filter-bar reveal" id="menuCategoryTabs">
+          <!-- Rendered dynamically from RestaurantConfig.menuCategories -->
+        </div>
+
+        <!-- Menu Cards Grid -->
+        <div class="menu-grid" id="menuGrid">
+          <!-- Rendered dynamically from RestaurantConfig.menuItems -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. PRIVATE DINING & EXPERIENCES
+         ========================================================================= -->
+    <section class="section restaurant-bg-section" id="experiences">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Atmosphere & Architecture</span>
+          <h2 class="section-title">The Spice Haven Dining Room</h2>
+          <p class="section-description">
+            Step into an intimate sanctuary where heritage architecture meets contemporary culinary luxury.
+          </p>
+        </div>
+
+        <!-- Atmospheric Architectural Showcase Banner -->
+        <div class="dining-showcase-panel reveal">
+          <div class="dining-showcase-content">
+            <span class="dining-showcase-eyebrow">Virtual Immersion & Ambience</span>
+            <h3 class="dining-showcase-title">An Authentic Fine-Dining Atmosphere</h3>
+            <p class="dining-showcase-text">
+              Beneath restored brick vaulted arches and cascading white florals, hand-blown crystal chandeliers cast a gentle amber glow over solid mahogany tables. Designed with deliberate acoustics and understated luxury, the Spice Haven dining room envelops guests in timeless warmth, wood-smoke aromas, and sensory comfort.
+            </p>
+
+            <div class="dining-ambience-features">
+              <div class="ambience-feature-item">
+                <div class="ambience-feature-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 21h18M3 10h18M5 10v11M19 10v11M9 10v11M15 10v11M4 10l8-6 8 6"></path>
+                  </svg>
+                </div>
+                <div class="ambience-feature-info">
+                  <span class="ambience-feature-title">Vaulted Brick Arches</span>
+                  <span class="ambience-feature-desc">Restored heritage masonry & intimate acoustics</span>
+                </div>
+              </div>
+
+              <div class="ambience-feature-item">
+                <div class="ambience-feature-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2a9 9 0 0 1 9 9c0 5-9 11-9 11S3 16 3 11a9 9 0 0 1 9-9z"></path>
+                    <circle cx="12" cy="11" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="ambience-feature-info">
+                  <span class="ambience-feature-title">Floral Canopy</span>
+                  <span class="ambience-feature-desc">Hanging white wisteria & lush living greenery</span>
+                </div>
+              </div>
+
+              <div class="ambience-feature-item">
+                <div class="ambience-feature-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                  </svg>
+                </div>
+                <div class="ambience-feature-info">
+                  <span class="ambience-feature-title">Warm Amber Glow</span>
+                  <span class="ambience-feature-desc">Artisan crystal chandeliers & candlelit tables</span>
+                </div>
+              </div>
+
+              <div class="ambience-feature-item">
+                <div class="ambience-feature-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="16" rx="2"></rect>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                </div>
+                <div class="ambience-feature-info">
+                  <span class="ambience-feature-title">Curated Table Settings</span>
+                  <span class="ambience-feature-desc">Bespoke fine linen & hand-polished crystal</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Call to Actions -->
+            <div class="dining-cta-group">
+              <button 
+                type="button" 
+                class="btn btn-primary-gold btn-lg trigger-reservation-modal"
+                id="diningReserveBtn"
+                aria-label="Reserve a Table in the Dining Room"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 6px;">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                Reserve a Table
+              </button>
+
+              <a 
+                href="#menu" 
+                class="btn btn-outline-gold btn-lg"
+                aria-label="Explore the seasonal fine-dining menu"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 6px;">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                  <path d="M2 17l10 5 10-5"></path>
+                  <path d="M2 12l10 5 10-5"></path>
+                </svg>
+                Explore Menu
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="experiences-grid reveal">
+          <div class="experience-card trigger-reservation-modal" role="button" tabindex="0" aria-label="Explore and book The Grand Dining Hall">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="The Grand Obsidian Dining Hall" class="experience-card-img" />
+            <div class="experience-card-overlay">
+              <span class="diet-tag special" style="align-self: flex-start; margin-bottom: 6px;">Main Hall</span>
+              <h3 class="experience-title">The Grand Dining Hall</h3>
+              <p class="experience-desc">High vaulted ceilings, open hearth view & candlelit acoustics.</p>
+              <span class="experience-card-action">Reserve Experience &rarr;</span>
+            </div>
+          </div>
+
+          <div class="experience-card trigger-reservation-modal" role="button" tabindex="0" aria-label="Explore and book Private Wine Cellar">
+            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80" alt="Sommelier's Private Cellar" class="experience-card-img" />
+            <div class="experience-card-overlay">
+              <span class="diet-tag special" style="align-self: flex-start; margin-bottom: 6px;">VIP Sommelier</span>
+              <h3 class="experience-title">Private Wine Cellar</h3>
+              <p class="experience-desc">1,200 rare vintage bottles with custom sommelier pairings.</p>
+              <span class="experience-card-action">Reserve Experience &rarr;</span>
+            </div>
+          </div>
+
+          <div class="experience-card trigger-reservation-modal" role="button" tabindex="0" aria-label="Explore and book Chef's Tasting Counter">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Chef's Omakase Counter" class="experience-card-img" />
+            <div class="experience-card-overlay">
+              <span class="diet-tag special" style="align-self: flex-start; margin-bottom: 6px;">Interactive</span>
+              <h3 class="experience-title">Chef's Tasting Counter</h3>
+              <p class="experience-desc">Front-row seat to the woodfired hearth with Executive Chef Julian.</p>
+              <span class="experience-card-action">Reserve Experience &rarr;</span>
+            </div>
+          </div>
+
+          <div class="experience-card trigger-reservation-modal" role="button" tabindex="0" aria-label="Explore and book Glasshouse Terrace">
+            <img src="https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?auto=format&fit=crop&w=800&q=80" alt="Starlit Glasshouse Terrace" class="experience-card-img" />
+            <div class="experience-card-overlay">
+              <span class="diet-tag special" style="align-self: flex-start; margin-bottom: 6px;">Starlight View</span>
+              <h3 class="experience-title">Glasshouse Terrace</h3>
+              <p class="experience-desc">Climate-controlled botanical starlight panoramic view.</p>
+              <span class="experience-card-action">Reserve Experience &rarr;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. TABLE RESERVATION EMBEDDED WIZARD
+         ========================================================================= -->
+    <section class="section reservation-section" id="reservation">
+      <div class="container">
+        <div class="reservation-box reveal">
+          <div class="reservation-header">
+            <span class="section-tag">Book An Experience</span>
+            <h2 class="section-title">Table Reservations</h2>
+            <p class="section-description" style="max-width: 600px; margin: 0 auto;">
+              Tables are reserved up to 30 days in advance. For parties exceeding 12 guests or bespoke private buyouts, please contact our VIP Concierge.
+            </p>
+          </div>
+
+          <form class="reservation-form-submit" id="embeddedReservationForm">
+            <!-- Step 1: Party Size & Date -->
+            <div class="form-grid">
+              <div class="form-group">
+                <label class="form-label">Number of Guests <span class="required-star">*</span></label>
+                <div class="guest-stepper-wrap">
+                  <button type="button" class="guest-stepper-btn" data-delta="-1" aria-label="Decrease party size">−</button>
+                  <span class="guest-count-display">2</span>
+                  <button type="button" class="guest-stepper-btn" data-delta="1" aria-label="Increase party size">+</button>
+                  <span style="font-size: 0.85rem; color: var(--text-muted);">Guests (Max 12 online)</span>
+                </div>
+                <div class="guest-preset-chips"></div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Reservation Date <span class="required-star">*</span></label>
+                <div class="quick-date-pills"></div>
+                <input type="date" class="form-input reservation-date-input" required />
+              </div>
+            </div>
+
+            <!-- Dining Area Selection -->
+            <div class="form-group">
+              <label class="form-label">Select Preferred Dining Sanctuary <span class="required-star">*</span></label>
+              <div class="dining-areas-selector dining-area-grid">
+                <!-- Populated via ReservationModule -->
+              </div>
+            </div>
+
+            <!-- Time Slots -->
+            <div class="form-group">
+              <label class="form-label">Select Service Time Slot <span class="required-star">*</span></label>
+              <div class="time-slots-wrapper">
+                <!-- Populated via ReservationModule -->
+              </div>
+            </div>
+
+            <!-- Guest Contact Details -->
+            <div class="form-grid">
+              <div class="form-group">
+                <label class="form-label">Full Name <span class="required-star">*</span></label>
+                <input type="text" name="guestName" class="form-input" placeholder="e.g. Lord Alexander Wright" required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Email for Digital Pass <span class="required-star">*</span></label>
+                <input type="email" name="guestEmail" class="form-input" placeholder="alexander@luxurydining.com" required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Direct Phone Number <span class="required-star">*</span></label>
+                <input type="tel" name="guestPhone" class="form-input" placeholder="+1 (555) 000-0000" required />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Dining Occasion</label>
+                <select name="occasion" class="form-select">
+                  <option>Romantic Date Night</option>
+                  <option>Anniversary Celebration</option>
+                  <option>Business Connoisseur Dinner</option>
+                  <option>Birthday Milestone</option>
+                  <option>Private Tasting Exploration</option>
+                </select>
+              </div>
+
+              <div class="form-group full">
+                <label class="form-label">Dietary Restrictions or Special Hearth Requests</label>
+                <textarea name="specialRequests" class="form-textarea" rows="2" placeholder="Allergies (shellfish, nuts), anniversary flower setup, sommelier wine preferences..."></textarea>
+              </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 16px;">
+              <button type="submit" class="btn btn-primary-gold btn-lg gold-shimmer" style="min-width: 280px;">
+                Confirm Table Reservation
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         6. FILTERABLE GALLERY & LIGHTBOX
+         ========================================================================= -->
+    <section class="section" id="gallery" style="background: var(--bg-dark);">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Visual Odyssey</span>
+          <h2 class="section-title">The Artistry in Frame</h2>
+          <p class="section-description">
+            A photographic glimpse into our hearth craftsmanship, candlelit corners, and signature creations.
+          </p>
+        </div>
+
+        <div class="category-filter-bar reveal" id="galleryCategoryTabs">
+          <!-- Populated dynamically via GalleryModule -->
+        </div>
+
+        <div class="gallery-grid reveal" id="galleryGrid">
+          <!-- Populated dynamically via GalleryModule -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         7. TESTIMONIALS & CRITIQUE CAROUSEL
+         ========================================================================= -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Acclaimed by Connoisseurs</span>
+          <h2 class="section-title">Critiques & Gastronomic Acclaim</h2>
+        </div>
+
+        <div class="testimonials-slider-wrap reveal">
+          <div class="testimonial-track" id="testimonialTrack">
+            <!-- Populated dynamically from RestaurantConfig.testimonials -->
+          </div>
+
+          <div class="testimonial-controls">
+            <div class="testimonial-dots" id="testimonialDots" style="display: flex; gap: 8px;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         8. LOCATION, HOURS & PRIVATE INQUIRY
+         ========================================================================= -->
+    <section class="section" id="location" style="background: var(--bg-dark);">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Left Column: Hours & Contact -->
+          <div class="contact-info-card reveal-left">
+            <span class="status-badge-open" id="operatingStatusBadge">Service In Session • Open Tonight</span>
+            <h3 style="font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 8px;">Service Hours</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px;">
+              Kitchen hearth fires up promptly 30 minutes prior to service.
+            </p>
+
+            <table class="hours-table" id="operatingHoursTable">
+              <!-- Rendered dynamically from RestaurantConfig.contact.schedule -->
+            </table>
+
+            <div class="contact-direct-items">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <strong style="color: var(--text-light); font-size: 0.9rem;">Sanctuary Location</strong>
+                  <p class="contact-address-insert" style="font-size: 0.88rem; margin-top: 2px;">
+                    482 Royal Sovereign Avenue, Suite 10, San Francisco, CA 94107
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <strong style="color: var(--text-light); font-size: 0.9rem;">VIP Direct Concierge</strong>
+                  <p style="margin-top: 2px;">
+                    <a href="tel:+15553827423" class="contact-phone-insert" style="color: var(--color-primary); font-size: 0.9rem;">+1 (555) 382-7423</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <strong style="color: var(--text-light); font-size: 0.9rem;">Private Bookings Desk</strong>
+                  <p style="margin-top: 2px;">
+                    <a href="mailto:concierge@spicehaven-dining.com" class="contact-email-insert" style="color: var(--color-primary); font-size: 0.9rem;">concierge@spicehaven-dining.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Private Dining Inquiry Form -->
+          <div class="inquiry-form-card reveal-right">
+            <span class="section-tag">Exclusive Events</span>
+            <h3 style="font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 8px;">Private Dining Inquiry</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 24px;">
+              Host your executive gathering, sommelier tasting, or wedding celebration with bespoke menus.
+            </p>
+
+            <form id="privateDiningForm">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label class="form-label">Your Name</label>
+                  <input type="text" name="clientName" class="form-input" placeholder="e.g. Lady Katherine" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Contact Email</label>
+                  <input type="email" name="clientEmail" class="form-input" placeholder="katherine@vanguard.com" required />
+                </div>
+              </div>
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <label class="form-label">Estimated Guests</label>
+                  <input type="number" name="eventGuests" min="8" max="120" value="16" class="form-input" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Target Month / Date</label>
+                  <input type="text" name="targetDate" class="form-input" placeholder="e.g. Late October 2026" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Event Vision & Culinary Scope</label>
+                <textarea name="eventNotes" class="form-textarea" rows="3" placeholder="Describe the occasion, desired wine pairing level, and any special chef interaction requests..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-outline-gold btn-block">
+                Send VIP Event Inquiry
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div>
+          <a href="#" class="brand-logo" style="margin-bottom: 12px;">
+            <div class="brand-crest">S</div>
+            <div class="brand-text">
+              <span class="brand-title brand-name-insert">Spice Haven</span>
+              <span class="brand-sub">Fine Dining</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc brand-tagline-insert">
+            Artisanal Spice & Contemporary Gastronomy. A tribute to rare botanicals, woodfired craftsmanship, and sommelier cellars.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#menu">Seasonal Menu</a></li>
+            <li><a href="#experiences">Dining Rooms</a></li>
+            <li><a href="#reservation">Reserve Table</a></li>
+            <li><a href="#gallery">Artistry Gallery</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Gastronomy</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#menu">Miyazaki Wagyu</a></li>
+            <li><a href="#menu">Black Truffle Cod</a></li>
+            <li><a href="#menu">Rare Single Origins</a></li>
+            <li><a href="#menu">Sommelier Vault</a></li>
+            <li><a href="#menu">Botanical Bar</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Private Cellar Circle</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 14px;">
+            Receive unlisted vintage release invitations and seasonal chef degustation previews.
+          </p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" class="newsletter-input" placeholder="Your executive email..." required />
+            <button type="submit" class="btn btn-primary-gold btn-sm" aria-label="Subscribe to newsletter">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="currentYear">2026</span> <span class="brand-name-insert">Spice Haven</span>. All Culinary Rights Reserved.
+        </div>
+        <div style="display: flex; gap: 24px; flex-wrap: wrap; align-items: center;">
+          <a href="javascript:void(0)" onclick="AppAnimations.replayCurtain()" style="color: var(--color-primary); font-size: 0.82rem; display: inline-flex; align-items: center; gap: 4px; font-weight: 600;">🎭 Replay Entrance</a>
+          <a href="javascript:void(0)" onclick="CartModule.showToast('Privacy Charter: Demo documentation.')" style="color: var(--text-dim); font-size: 0.82rem;">Privacy Charter</a>
+          <a href="javascript:void(0)" onclick="CartModule.showToast('Sommelier Licensing: CA ABC Type 47 License.')" style="color: var(--text-dim); font-size: 0.82rem;">Sommelier Licensing</a>
+          <a href="javascript:void(0)" onclick="CartModule.showToast('Press & Accolades: Michelin Selection 2026.')" style="color: var(--text-dim); font-size: 0.82rem;">Press & Accolades</a>
+        </div>
+        <div style="color: var(--color-primary); font-size: 0.82rem;">
+          Handcrafted Freelance Commercial Template
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       CART OFF-CANVAS SLIDE-IN DRAWER & OVERLAY
+       ========================================================================= -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Your Culinary Order Drawer">
+    <div class="cart-drawer-header">
+      <h3 class="cart-drawer-title">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        Culinary Order
+      </h3>
+      <button class="cart-close-btn" id="cartCloseBtn" aria-label="Close cart">&times;</button>
+    </div>
+
+    <!-- Items List -->
+    <div class="cart-items-container" id="cartItemsList">
+      <!-- Populated via CartModule -->
+    </div>
+
+    <!-- Promo Code & Totals -->
+    <div class="cart-drawer-footer">
+      <div style="display: flex; gap: 8px; margin-bottom: 16px;">
+        <input type="text" id="cartPromoInput" class="form-input" placeholder="Promo code (e.g. SAVOR15)" style="padding: 8px 12px; font-size: 0.85rem;" />
+        <button type="button" id="applyPromoBtn" class="btn btn-outline-gold btn-sm">Apply</button>
+      </div>
+
+      <div class="cart-summary-line">
+        <span>Culinary Subtotal:</span>
+        <span id="cartSubtotal">₹0</span>
+      </div>
+
+      <div class="cart-summary-line" id="cartDiscountRow" style="display: none; color: var(--color-primary);">
+        <span>Promotional Privilege:</span>
+        <span id="cartDiscount">-₹0</span>
+      </div>
+
+      <div class="cart-summary-line">
+        <span>Estimated Taxes & Service:</span>
+        <span id="cartTax">₹0</span>
+      </div>
+
+      <div class="cart-summary-line cart-summary-total">
+        <span>Order Total:</span>
+        <span id="cartTotal">₹0</span>
+      </div>
+
+      <button class="btn btn-primary-gold btn-block btn-lg gold-shimmer" id="cartCheckoutBtn" style="margin-top: 18px;">
+        Proceed to Checkout
+      </button>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       CHECKOUT MODAL DIALOG
+       ========================================================================= -->
+  <div class="modal-backdrop" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutModalTitle">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="checkoutModalClose" aria-label="Close checkout">&times;</button>
+      <div class="modal-header">
+        <span class="section-tag">Fine Dining Order</span>
+        <h3 id="checkoutModalTitle" style="font-family: var(--font-serif); font-size: 1.6rem;">Order Checkout</h3>
+      </div>
+
+      <div class="modal-body">
+        <!-- Step 1: Dining Mode & Details -->
+        <div class="checkout-step active" id="checkoutStep1">
+          <div id="checkoutOrderReview"></div>
+
+          <div class="form-group">
+            <label class="form-label">Choose Dining Mode</label>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 6px;">
+              <label style="background: var(--bg-surface); border: 1px solid var(--border-subtle); padding: 12px; border-radius: var(--radius-sm); cursor: pointer; text-align: center; font-size: 0.85rem;">
+                <input type="radio" name="diningMode" value="Dine-In Pre-Order" checked style="margin-bottom: 4px;" />
+                <div>Dine-In Service</div>
+              </label>
+              <label style="background: var(--bg-surface); border: 1px solid var(--border-subtle); padding: 12px; border-radius: var(--radius-sm); cursor: pointer; text-align: center; font-size: 0.85rem;">
+                <input type="radio" name="diningMode" value="Curated Takeout" style="margin-bottom: 4px;" />
+                <div>Gourmet Takeout</div>
+              </label>
+              <label style="background: var(--bg-surface); border: 1px solid var(--border-subtle); padding: 12px; border-radius: var(--radius-sm); cursor: pointer; text-align: center; font-size: 0.85rem;">
+                <input type="radio" name="diningMode" value="Private Courier" style="margin-bottom: 4px;" />
+                <div>Private Courier</div>
+              </label>
+            </div>
+          </div>
+
+          <div id="checkoutErrorAlert" style="display: none;"></div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label" for="checkoutCustomerName">Connoisseur Name <span class="required-star">*</span></label>
+              <input type="text" id="checkoutCustomerName" class="form-input" placeholder="e.g. Julian Vance" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="checkoutCustomerEmail">Email Address <span class="required-star">*</span></label>
+              <input type="email" id="checkoutCustomerEmail" class="form-input" placeholder="e.g. julian@example.com" required />
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label" for="checkoutCustomerPhone">Direct Contact Number <span class="required-star">*</span></label>
+              <input type="tel" id="checkoutCustomerPhone" class="form-input" placeholder="+1 (555) 000-0000" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="checkoutNotes">Table # (If Seated) / Notes</label>
+              <input type="text" id="checkoutNotes" class="form-input" placeholder="Table #14 in Grand Hall or Gate Code" />
+            </div>
+          </div>
+
+          <button type="button" class="btn btn-primary-gold btn-block btn-lg gold-shimmer" id="btnContinueToPayment" onclick="CartModule.handleProceedToPayment()">
+            Review & Continue to Payment &rarr;
+          </button>
+        </div>
+
+        <!-- Step 2: Payment Gateway Selection -->
+        <div class="checkout-step" id="checkoutStep2">
+          <h4 style="font-family: var(--font-serif); font-size: 1.3rem; margin-bottom: 16px;">Select Payment Privilege</h4>
+          
+          <div style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 24px;">
+            <!-- Razorpay Standard Gateway (Cards, UPI, NetBanking, Wallets) -->
+            <div style="border: 1px solid var(--border-gold); background: rgba(229, 169, 60, 0.12); border-radius: var(--radius-sm); padding: 18px; cursor: pointer; transition: transform var(--transition-fast);" onclick="CartModule.handleRazorpayCheckout()" id="checkoutRazorpayCard">
+              <div style="display: flex; align-items: center; justify-content: space-between;">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2">
+                    <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                    <line x1="2" y1="10" x2="22" y2="10"></line>
+                  </svg>
+                  <div>
+                    <strong style="color: var(--text-light); font-size: 1rem;">Razorpay Secure Checkout</strong>
+                    <p style="font-size: 0.8rem; color: var(--text-muted);">Credit/Debit Cards, UPI, NetBanking, Wallets & PayLater</p>
+                  </div>
+                </div>
+                <span class="diet-tag special" style="background: rgba(229, 169, 60, 0.2); border-color: var(--color-primary);">Official Gateway</span>
+              </div>
+            </div>
+
+            <!-- Instant UPI / QR Code Digital Pay -->
+            <div style="border: 1px solid var(--border-gold); background: rgba(229, 169, 60, 0.08); border-radius: var(--radius-sm); padding: 18px; cursor: pointer; transition: transform var(--transition-fast);" onclick="CartModule.openUpiModal()" id="checkoutUpiTriggerCard">
+              <div style="display: flex; align-items: center; justify-content: space-between;">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2">
+                    <rect x="3" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="14" width="7" height="7"></rect>
+                    <rect x="3" y="14" width="7" height="7"></rect>
+                  </svg>
+                  <div>
+                    <strong style="color: var(--text-light); font-size: 1rem;">Instant Digital QR Pay / UPI</strong>
+                    <p style="font-size: 0.8rem; color: var(--text-muted);">Scan & pay with Google Pay, PhonePe, Paytm, BHIM</p>
+                  </div>
+                </div>
+                <span class="diet-tag special">Instant Dynamic QR</span>
+              </div>
+            </div>
+
+            <!-- Credit Card Simulation -->
+            <div style="border: 1px solid var(--border-subtle); background: var(--bg-surface); border-radius: var(--radius-sm); padding: 18px; cursor: pointer;" onclick="CartModule.handleSimulatePayment('Black Amex / Visa Signature')">
+              <div style="display: flex; align-items: center; justify-content: space-between;">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                    <line x1="1" y1="10" x2="23" y2="10"></line>
+                  </svg>
+                  <div>
+                    <strong style="color: var(--text-light); font-size: 1rem;">Credit / Debit Card (Tokenized)</strong>
+                    <p style="font-size: 0.8rem; color: var(--text-muted);">Mastercard, Visa, American Express</p>
+                  </div>
+                </div>
+                <span class="diet-tag">Secure 256-bit</span>
+              </div>
+            </div>
+
+            <!-- Pay at Table -->
+            <div style="border: 1px solid var(--border-subtle); background: var(--bg-surface); border-radius: var(--radius-sm); padding: 18px; cursor: pointer;" onclick="CartModule.handleSimulatePayment('Pay at Table')">
+              <div style="display: flex; align-items: center; justify-content: space-between;">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                  </svg>
+                  <div>
+                    <strong style="color: var(--text-light); font-size: 1rem;">Pay Upon Dining / Table Concierge</strong>
+                    <p style="font-size: 0.8rem; color: var(--text-muted);">Settle order ticket with your table captain</p>
+                  </div>
+                </div>
+                <span class="diet-tag">Dine-In</span>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="btn btn-subtle btn-sm" onclick="CartModule.goToStep(1)">
+            &larr; Back to Order Details
+          </button>
+        </div>
+
+        <!-- Step 3: Success Confirmation -->
+        <div class="checkout-step" id="checkoutStep3">
+          <!-- Populated by CartModule.completeOrder -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       UPI INSTANT PAYMENT MODAL (DYNAMIC QR & ORDER SETTLEMENT)
+       ========================================================================= -->
+  <div class="modal-backdrop" id="upiPaymentModal" role="dialog" aria-modal="true" aria-labelledby="upiModalTitle">
+    <div class="modal-card upi-modal-card">
+      <button class="modal-close-btn" id="upiModalClose" aria-label="Close UPI payment modal" onclick="CartModule.closeUpiModal()">&times;</button>
+      
+      <div class="modal-header">
+        <span class="section-tag" style="color: var(--color-primary);">Instant Contactless Settlement</span>
+        <h3 id="upiModalTitle" style="font-family: var(--font-serif); font-size: 1.55rem; color: var(--text-light); margin-top: 4px;">UPI Instant Payment</h3>
+      </div>
+
+      <div class="modal-body">
+        <!-- Main Interactive Payment Grid -->
+        <div class="upi-layout-grid" id="upiGridContainer">
+          <!-- Left Column: Order Summary & Customer Meta -->
+          <div class="upi-order-summary-panel">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 12px; border-bottom: 1px solid var(--border-subtle);">
+              <span style="font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted);">Order Ticket</span>
+              <span class="reservation-ticket-code" id="upiOrderRef" style="font-size: 0.95rem; color: var(--color-primary); font-family: var(--font-mono); font-weight: 700;">#SH-XXXXXX</span>
+            </div>
+
+            <!-- Mini item list -->
+            <div class="upi-items-mini-list" id="upiMiniItemsList">
+              <!-- Populated by JS -->
+            </div>
+
+            <!-- Financial Breakdown -->
+            <div style="padding-top: 10px; border-top: 1px solid var(--border-subtle); font-size: 0.86rem; display: flex; flex-direction: column; gap: 6px;">
+              <div style="display: flex; justify-content: space-between; color: var(--text-muted);">
+                <span>Items Subtotal:</span>
+                <span id="upiSubtotalText">₹0</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; color: var(--color-primary); display: none;" id="upiDiscountRow">
+                <span>Promotional Discount:</span>
+                <span id="upiDiscountText">-₹0</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; color: var(--text-muted);">
+                <span>Taxes & Service:</span>
+                <span id="upiTaxText">₹0</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; padding-top: 8px; border-top: 1px solid var(--border-subtle); font-weight: 700; color: var(--text-light); font-size: 1.05rem;">
+                <span>Total Payable:</span>
+                <span id="upiTotalText" style="color: var(--text-light);">₹0</span>
+              </div>
+            </div>
+
+            <!-- Customer & Delivery Meta -->
+            <div style="margin-top: 14px; padding: 12px; background: rgba(255,255,255,0.03); border-radius: var(--radius-sm); font-size: 0.8rem; color: var(--text-muted);">
+              <div><strong>Dining Mode:</strong> <span id="upiDiningModeText">Dine-In Service</span></div>
+              <div style="margin-top: 4px;"><strong>Connoisseur:</strong> <span id="upiCustomerNameText">Guest</span></div>
+              <div style="margin-top: 4px;"><strong>Contact:</strong> <span id="upiCustomerPhoneText">-</span></div>
+            </div>
+
+            <button type="button" class="btn btn-subtle btn-block btn-sm" style="margin-top: 14px;" onclick="CartModule.backToCheckoutStep2()">
+              &larr; Change Payment Method
+            </button>
+          </div>
+
+          <!-- Right Column: Dynamic QR & Payee Controls -->
+          <div class="upi-qr-panel">
+            <div class="upi-mode-tabs">
+              <button type="button" class="upi-mode-tab active" id="tabDynamicQr" onclick="CartModule.switchUpiTab('dynamic')">⚡ Dynamic Amount QR</button>
+              <button type="button" class="upi-mode-tab" id="tabStaticQr" onclick="CartModule.switchUpiTab('static')">📋 Merchant Reference</button>
+            </div>
+
+            <!-- Amount Hero -->
+            <div class="upi-amount-hero" id="upiInrAmountHero">₹0.00</div>
+            <div class="upi-amount-sub" id="upiConversionSub">Exact payable amount locked in QR</div>
+
+            <!-- Dynamic QR Frame -->
+            <div class="upi-qr-frame" id="upiQrFrame">
+              <div id="upiQrTarget"></div>
+            </div>
+
+            <!-- Merchant VPA Details -->
+            <div class="upi-merchant-badge">
+              <span id="upiMerchantDisplay">Spice Haven • naveenofficial916@okaxis</span>
+              <button type="button" class="upi-copy-btn" onclick="CartModule.copyUpiId()" title="Copy UPI ID">Copy</button>
+            </div>
+
+            <!-- Instructions & App Badges -->
+            <div style="font-size: 0.82rem; color: var(--text-cream); margin-bottom: 6px;">
+              Scan with any UPI app on your phone
+            </div>
+            <div class="upi-apps-badges">
+              <span class="upi-app-chip">Google Pay</span>
+              <span class="upi-app-chip">PhonePe</span>
+              <span class="upi-app-chip">Paytm</span>
+              <span class="upi-app-chip">BHIM</span>
+              <span class="upi-app-chip">CRED UPI</span>
+            </div>
+
+            <!-- Direct Mobile UPI Intent Button -->
+            <div style="margin-top: 14px;">
+              <a href="#" id="upiDirectIntentBtn" class="btn btn-outline-gold btn-block btn-sm">
+                📲 Pay via Installed UPI App
+              </a>
+            </div>
+
+            <!-- Confirmation & UTR Section -->
+            <div class="upi-verification-box">
+              <label for="upiUtrInput">Enter 12-Digit UPI UTR / Bank Reference No.</label>
+              <input type="text" id="upiUtrInput" class="form-input" placeholder="e.g. 425612349876" maxlength="12" style="min-height: 40px; font-size: 0.88rem;" oninput="document.getElementById('upiUtrError').style.display='none'" />
+              <div id="upiUtrError" style="display:none; color: #EF4444; font-size: 0.8rem; margin-top: 6px; line-height: 1.4;"></div>
+              
+              <button type="button" id="upiConfirmPayBtn" class="btn btn-primary-gold btn-block" style="margin-top: 10px;" onclick="CartModule.handleUpiSubmitted()">
+                <span id="upiConfirmPayBtnText">Verify & Confirm Payment &rarr;</span>
+              </button>
+            </div>
+
+            <div class="upi-security-note">
+              🔒 <strong>Security Verification:</strong> Enter the 12-digit UTR from Google Pay, PhonePe, or Paytm to log settlement with your order.
+            </div>
+
+            <div style="margin-top: 10px; text-align: center;">
+              <button type="button" class="btn btn-link btn-xs" style="color: var(--text-dim); font-size: 0.76rem; text-decoration: underline; background: none; border: none; cursor: pointer;" onclick="CartModule.handleUpiResolutionHelp()">
+                Facing &ldquo;Could not load banking name&rdquo;? Tap here
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Result / Receipt State (Hidden initially) -->
+        <div id="upiResultContainer" style="display: none; padding: 10px 0;">
+          <!-- Rendered by CartModule.renderUpiResult -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       TABLE RESERVATION MODAL (TRIGGERED VIA HEADER/HERO BUTTONS)
+       ========================================================================= -->
+  <div class="modal-backdrop" id="reservationModal" role="dialog" aria-modal="true" aria-labelledby="modalReserveTitle">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="reservationModalClose" aria-label="Close reservation modal">&times;</button>
+      <div class="modal-header">
+        <span class="section-tag">Instant Priority Table</span>
+        <h3 id="modalReserveTitle" style="font-family: var(--font-serif); font-size: 1.6rem;">Reserve Your Dining Sanctuary</h3>
+      </div>
+
+      <div class="modal-body">
+        <form class="reservation-form-submit" id="popupReservationForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label">Guests <span class="required-star">*</span></label>
+              <div class="guest-stepper-wrap">
+                <button type="button" class="guest-stepper-btn" data-delta="-1" aria-label="Decrease party size">−</button>
+                <span class="guest-count-display">2</span>
+                <button type="button" class="guest-stepper-btn" data-delta="1" aria-label="Increase party size">+</button>
+              </div>
+              <div class="guest-preset-chips"></div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Date <span class="required-star">*</span></label>
+              <div class="quick-date-pills"></div>
+              <input type="date" class="form-input reservation-date-input" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Preferred Dining Hall <span class="required-star">*</span></label>
+            <div class="dining-areas-selector dining-area-grid">
+              <!-- Rendered via ReservationModule -->
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Service Time Slot <span class="required-star">*</span></label>
+            <div class="time-slots-wrapper">
+              <!-- Rendered via ReservationModule -->
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label">Full Name <span class="required-star">*</span></label>
+              <input type="text" name="guestName" class="form-input" placeholder="e.g. Lady Katherine Vance" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email for Digital Pass <span class="required-star">*</span></label>
+              <input type="email" name="guestEmail" class="form-input" placeholder="guest@luxury.com" required />
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label">Direct Phone Number <span class="required-star">*</span></label>
+              <input type="tel" name="guestPhone" class="form-input" placeholder="+1 (555) 000-0000" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Occasion</label>
+              <select name="occasion" class="form-select">
+                <option>Romantic Date Night</option>
+                <option>Anniversary Celebration</option>
+                <option>Executive Dinner</option>
+                <option>Birthday Milestone</option>
+                <option>Private Tasting Exploration</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group full">
+            <label class="form-label">Dietary Restrictions or Special Hearth Requests</label>
+            <textarea name="specialRequests" class="form-textarea" rows="2" placeholder="Allergies (shellfish, nuts), anniversary setup, sommelier wine pairing preferences..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary-gold btn-block btn-lg gold-shimmer">
+            Review & Confirm Reservation
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       UNIVERSAL STATUS TRACKER MODAL (RESERVATIONS & ORDERS)
+       ========================================================================= -->
+  <div class="modal-backdrop" id="statusTrackerModal" role="dialog" aria-modal="true" aria-labelledby="statusTrackerTitle">
+    <div class="modal-card" style="max-width: 520px;">
+      <button class="modal-close-btn" aria-label="Close status tracker" onclick="StatusTrackerModule.close()">&times;</button>
+      
+      <div class="modal-header">
+        <span class="section-tag" style="color: var(--color-primary);">Live Server Registry</span>
+        <h3 id="statusTrackerTitle" style="font-family: var(--font-serif); font-size: 1.55rem; color: var(--text-light); margin-top: 4px;">Track Dining Status</h3>
+      </div>
+
+      <div class="modal-body">
+        <div class="tracker-tabs">
+          <button type="button" class="tracker-tab active" id="tabTrackReservation" onclick="StatusTrackerModule.switchTab('reservation')">
+            🍽️ Table Reservation
+          </button>
+          <button type="button" class="tracker-tab" id="tabTrackOrder" onclick="StatusTrackerModule.switchTab('order')">
+            🛍️ Culinary Order
+          </button>
+        </div>
+
+        <div class="form-group" style="margin-bottom: 14px;">
+          <label class="form-label" id="trackerInputLabel">Enter Booking Reference Code (e.g. RES-123456)</label>
+          <div style="display: flex; gap: 8px;">
+            <input type="text" id="trackerQueryInput" class="form-input" placeholder="e.g. RES-849201" style="font-family: var(--font-mono); text-transform: uppercase;" onkeydown="if(event.key==='Enter'){event.preventDefault(); StatusTrackerModule.handleLookup();}" />
+            <button type="button" class="btn btn-primary-gold" style="white-space: nowrap; padding: 0 18px;" onclick="StatusTrackerModule.handleLookup()">
+              Query
+            </button>
+          </div>
+        </div>
+
+        <div id="trackerResultContainer"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       LIGHTBOX FULLSCREEN MODAL
+       ========================================================================= -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Full-size photo preview">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close photo preview">&times;</button>
+    <button class="lightbox-nav-btn prev" id="lightboxPrev" aria-label="Previous photo">&larr;</button>
+    <button class="lightbox-nav-btn next" id="lightboxNext" aria-label="Next photo">&rarr;</button>
+
+    <div class="lightbox-img-wrapper">
+      <img src="" alt="" id="lightboxImage" class="lightbox-img" />
+      <div id="lightboxCaption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       AMBIENT SOUND EQUALIZER WIDGET (BOTTOM-LEFT LUXURY LOUNGE CONTROLLER)
+       ========================================================================= -->
+  <div class="audio-ambience-widget" id="audioAmbienceWidget" title="Toggle Fine-Dining Acoustic Lounge Ambiance">
+    <div class="audio-equalizer">
+      <div class="audio-bar"></div>
+      <div class="audio-bar"></div>
+      <div class="audio-bar"></div>
+    </div>
+    <span class="audio-label">Sound Ambiance</span>
+  </div>
+
+  <!-- =========================================================================
+       TASK 12: CUSTOMER PROFILE & ORDER HISTORY MODAL
+       ========================================================================= -->
+  <div class="modal-backdrop" id="customerProfileModal" role="dialog" aria-modal="true" aria-labelledby="profileModalTitle">
+    <div class="modal-card profile-modal-card">
+      <button class="modal-close-btn" aria-label="Close customer account" onclick="ProfileModule.close()">&times;</button>
+      
+      <div class="profile-header-banner">
+        <div class="profile-avatar-circle" id="profileAvatarInitials">SH</div>
+        <div class="profile-header-meta">
+          <span class="section-tag" style="margin-bottom: 2px;">Sanctuary Connoisseur</span>
+          <h3 id="profileHeaderName" class="profile-header-title">Valued Patron</h3>
+          <div class="profile-tier-badge" id="profileHeaderTier">Spice Haven Connoisseur</div>
+        </div>
+      </div>
+
+      <div class="profile-modal-body">
+        <div class="profile-tabs-nav" role="tablist">
+          <button type="button" class="profile-tab-btn active" data-tab="profile" onclick="ProfileModule.switchTab('profile')">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            <span>Patron Profile</span>
+          </button>
+          <button type="button" class="profile-tab-btn" data-tab="orders" onclick="ProfileModule.switchTab('orders')">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span>Order History</span>
+          </button>
+          <button type="button" class="profile-tab-btn" data-tab="reservations" onclick="ProfileModule.switchTab('reservations')">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            <span>Reservations</span>
+          </button>
+          <button type="button" class="profile-tab-btn" data-tab="favorites" onclick="ProfileModule.switchTab('favorites')">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+            <span>Favorites & Discovery</span>
+          </button>
+        </div>
+
+        <div id="profileContentContainer" class="profile-content-container"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- =========================================================================
+       APPLICATION JAVASCRIPT MODULES & RAZORPAY CHECKOUT SDK
+       ========================================================================= -->
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="js/restaurant.config.js?v=2.9"></script>
+  <script src="js/lib/qrcode.min.js?v=2.9"></script>
+  <script src="js/animations.js?v=2.9"></script>
+  <script src="js/favorites.js?v=2.9"></script>
+  <script src="js/menu.js?v=2.9"></script>
+  <script src="js/cart.js?v=2.9"></script>
+  <script src="js/reservation.js?v=2.9"></script>
+  <script src="js/profile.js?v=2.9"></script>
+  <script src="js/gallery.js?v=2.9"></script>
+  <script src="js/app.js?v=2.9"></script>
+
+</body>
+</html>

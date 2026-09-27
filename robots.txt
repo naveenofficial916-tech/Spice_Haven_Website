@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://spicehaven-dining.com/sitemap.xml

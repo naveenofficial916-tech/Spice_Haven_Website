@@ -1,0 +1,26 @@
+{
+  "name": "spice-haven-restaurant-template",
+  "version": "1.0.0",
+  "description": "Premium dark cinematic restaurant website template for freelance client demos and commercial deployments",
+  "main": "index.html",
+  "scripts": {
+    "build": "node -c server.js js/restaurant.config.js js/lib/qrcode.min.js js/animations.js js/menu.js js/favorites.js js/cart.js js/reservation.js js/profile.js js/gallery.js js/app.js && echo Production validation passed successfully!",
+    "start": "node server.js",
+    "preview": "node server.js",
+    "test": "node -c server.js js/restaurant.config.js js/lib/qrcode.min.js js/animations.js js/menu.js js/favorites.js js/cart.js js/reservation.js js/profile.js js/gallery.js js/app.js"
+  },
+  "keywords": [
+    "restaurant",
+    "fine-dining",
+    "template",
+    "dark-cinematic",
+    "freelance-portfolio",
+    "vanilla-javascript",
+    "css3"
+  ],
+  "author": "Freelance Web Developer",
+  "license": "MIT",
+  "dependencies": {
+    "razorpay": "^2.9.8"
+  }
+}
